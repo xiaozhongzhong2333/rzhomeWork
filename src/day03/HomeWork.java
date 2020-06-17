@@ -1,5 +1,7 @@
 package day03;
 
+import java.util.Scanner;
+
 public class HomeWork {
     //打印九九乘法   等腰三角形
     public static void Judge(int side1,int side2,int side3){//判断等腰三角形
@@ -18,8 +20,12 @@ public class HomeWork {
         }
     }
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int side1=sc.nextInt();
+        int side2=sc.nextInt();
+        int side3=sc.nextInt();
         Table();
-        Judge(4,6,8);
+        Judge(side1,side2,side3);
     }
 
 }
