@@ -1,6 +1,5 @@
 package day03;
 
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -12,8 +11,30 @@ public class HomeWork {
             arr[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(arr));
-        int[] ch = HomeWork.JudgeOdd(arr);
-        int[] ch1 = HomeWork.JudgeEven(arr);
+        int odd=0;
+        int even=0;
+        for(int i=0;i<arr.length;i++){
+            if (arr[i]%2==0){
+                even++;
+            }else{
+                odd++;
+            }
+        }
+        int[] ch = new int[odd];
+        int[] ch1 = new int[even];
+        int m=0;
+        int n=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                ch[m] = arr[i];
+                m++;
+            }else {
+                ch1[n] = arr[i];
+                n++;
+            }
+        }
+//        int[] ch = HomeWork.JudgeOdd(arr);
+//        int[] ch1 = HomeWork.JudgeEven(arr);
         System.out.println(Arrays.toString(ch));
         System.out.println(Arrays.toString(ch1));
         generate(ch, ch1);
@@ -43,13 +64,13 @@ public class HomeWork {
             int j = 0;
             for (int i = 0; i < result.length; i = i + 2) {
                 result[i] = arr[j];
-                j++;
-            }
-            int k = 0;
-            for (int i = 1; i < result.length; i = i + 2) {
-                result[i] = arr1[k];
-                k++;
-            }
+            j++;
+        }
+        int k = 0;
+        for (int i = 1; i < result.length; i = i + 2) {
+            result[i] = arr1[k];
+            k++;
+        }
             for (int i = 0; i < result.length; i++) {
                 System.out.println(result[i]);
             }
@@ -72,7 +93,7 @@ public class HomeWork {
         }
     }
 
-    private static int[] JudgeOdd(int[] arr) {
+    /*private static int[] JudgeOdd(int[] arr) {
         int[] ch = new int[arr.length];
         int j = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -122,6 +143,6 @@ public class HomeWork {
             }
         }
         return ch1;
-    }
+    }*/
 }
 
