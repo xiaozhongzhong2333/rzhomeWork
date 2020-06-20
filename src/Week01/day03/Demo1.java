@@ -1,6 +1,4 @@
-package day03;
-
-import sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_OUT;
+package Week01.day03;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package day03;
+package Week01.day03;
 
 public class DogAbstract extends DemoAbstract{
     @Override

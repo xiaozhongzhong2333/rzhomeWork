@@ -1,6 +1,4 @@
-package day03;
-
-import java.util.Arrays;
+package Week01.day03;
 
 public class MainWork {
     public static void main(String[] args) {

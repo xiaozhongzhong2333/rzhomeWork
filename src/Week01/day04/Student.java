@@ -1,15 +1,12 @@
-package day02;
+package Week01.day04;
 
-public class Student {
-    private int id;
-    private  String name;
+import java.io.Serializable;
+
+public class Student implements  Serializable{
+    private static  int id;
+    private static  String name;
 
     public Student() {
-        this(1);
-    }
-
-    public Student(int id) {
-        this.id = id;
     }
 
     public Student(int id, String name) {
@@ -33,8 +30,11 @@ public class Student {
         this.name = name;
     }
 
-    public static void main(String[] args) {
-        Student student = new Student();
-        System.out.println(student);
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

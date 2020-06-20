@@ -1,6 +1,4 @@
-package day02;
-
-import java.util.Scanner;
+package Week01.day02;
 
 public class HomeWork {
     public static void Judge(int side1, int side2, int side3) {//判断等腰三角形

@@ -1,4 +1,4 @@
-package day02;
+package Week01.day02;
 
 public class TestFile {
     public static void main(String[] args) {

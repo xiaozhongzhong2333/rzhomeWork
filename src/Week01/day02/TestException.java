@@ -1,4 +1,4 @@
-package day02;
+package Week01.day02;
 
 public class TestException {
     public static void division(int a, int b) throws Exception {
